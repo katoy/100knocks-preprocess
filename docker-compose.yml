@@ -38,3 +38,17 @@ services:
     volumes:
       - ./docker/work:/home/jovyan/work
     command: start-notebook.sh --NotebookApp.token=''
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.ruby
+    image: dss-ruby
+    volumes:
+      - ./docker/work/ruby/knocks100:/knocks100
+      - ./docker/work/data:/tmp/data
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+

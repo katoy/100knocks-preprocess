@@ -61,6 +61,14 @@ Document
 - work/answer配下に解答例notebookを配置
 - work/data配下に使用したデータを配置
 
+変更点
+====
+
+* csv ファイル先頭の BOM を削除
+* ruby コンテナを追加。
+  docker-compose run -rm app bash などしてから、 bin/rails c とすれば Activerecord をつかって DB 検索ができる。  
+  docker/work/ruby/memo.md も参照すること。
+
 Link
 ====
 本コンテンツの内容やセットアップ手順について解説いただいているサイト、Dockerについて基本から学べるサイト
