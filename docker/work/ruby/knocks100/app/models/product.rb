@@ -9,9 +9,9 @@
 #  unit_cost          :float
 #  unit_price         :float
 #
-# Foreign Keys
+# Indexes
 #
-#  category_small_cd  (category_small_cd => categories.category_small_cd)
+#  index_products_on_category_small_cd  (category_small_cd)
 #
 class Product < ApplicationRecord
   self.primary_key = :product_cd

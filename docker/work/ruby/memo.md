@@ -27,7 +27,9 @@ rails db:seed
 rails db:reset
 ```
 
-## ER　図の姿勢
+db:seed が遅いかもしれない。その場合は, receipt の migration の add index をコメントにする。
+
+## ER 図の生成
 
 ```conosle
 bundle exec erd --filetype=svg

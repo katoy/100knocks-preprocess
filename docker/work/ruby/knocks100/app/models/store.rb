@@ -13,6 +13,10 @@
 #  store_name    :string
 #  tel_no        :string
 #
+# Indexes
+#
+#  index_stores_on_prefecture_cd  (prefecture_cd)
+#
 class Store < ApplicationRecord
   self.primary_key = :store_cd
 

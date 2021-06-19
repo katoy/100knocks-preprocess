@@ -7,9 +7,9 @@ class CreateGeocodes < ActiveRecord::Migration[6.1]
       t.string :town
       t.string :street
       t.string :address
-      t.string :full_address
-      t.decimal :longitude, precision: 11, scale: 8
-      t.decimal :latitude, precision: 11, scale: 8
+      t.string :full_address, null: false, index: true
+      t.decimal :longitude, precision: 11, scale: 8, null: false
+      t.decimal :latitude, precision: 11, scale: 8, null: false
     end
   end
 end

@@ -3,15 +3,19 @@
 # Table name: receipts
 #
 #  id             :integer          not null, primary key
-#  amount         :integer
-#  product_cd     :string
-#  quantity       :integer
-#  receipt_no     :integer
+#  amount         :integer          not null
+#  product_cd     :string           not null
+#  quantity       :integer          not null
+#  receipt_no     :integer          not null
 #  receipt_sub_no :integer
-#  sales_epoch    :integer
-#  sales_ymd      :date
-#  store_cd       :string
-#  customer_id    :string
+#  sales_epoch    :integer          not null
+#  sales_ymd      :date             not null
+#  store_cd       :string           not null
+#  customer_id    :string           not null
+#
+# Indexes
+#
+#  receipts_index  (sales_ymd,store_cd,receipt_no,receipt_sub_no) UNIQUE
 #
 class Receipt < ApplicationRecord
   belongs_to :customer, foreign_key: :customer_id
