@@ -9,7 +9,7 @@
 #  receipt_no     :integer          not null
 #  receipt_sub_no :integer
 #  sales_epoch    :integer          not null
-#  sales_ymd      :date             not null
+#  sales_ymd      :integer          not null
 #  store_cd       :string           not null
 #  customer_id    :string           not null
 #

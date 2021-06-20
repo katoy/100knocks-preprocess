@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_06_16_215848) do
     t.string "postal_cd"
     t.string "address"
     t.string "application_store_cd"
-    t.date "application_date"
+    t.string "application_date"
     t.string "status_cd"
   end
 
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2021_06_16_215848) do
   end
 
   create_table "receipts", force: :cascade do |t|
-    t.date "sales_ymd", null: false
+    t.integer "sales_ymd", null: false
     t.integer "sales_epoch", null: false
     t.string "store_cd", null: false
     t.integer "receipt_no", null: false

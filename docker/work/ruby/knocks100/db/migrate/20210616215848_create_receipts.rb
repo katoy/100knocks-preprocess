@@ -1,7 +1,7 @@
 class CreateReceipts < ActiveRecord::Migration[6.1]
   def change
     create_table :receipts do |t|
-      t.date :sales_ymd, null: false
+      t.integer :sales_ymd, null: false
       t.integer :sales_epoch, null: false
       t.string :store_cd, null: false
       t.integer :receipt_no, null: false

@@ -12,7 +12,7 @@ rails g model Category category_major_cd:string category_major_name:string categ
 
 rails g model Product product_cd:string category_major_cd:string category_medium_cd:string category_small_cd:string unit_price:float unit_cost:float category_major_name:string category_medium_name:string category_small_name:string --no-timestamps --force
 
-rails g model Receipt sales_ymd:date sales_epoch:integer store_cd:string receipt_no:integer receipt_sub_no:integer customer_id:string product_cd:string quantity:integer amount:integer --no-timestamps --force
+rails g model Receipt sales_ymd:integer sales_epoch:integer store_cd:string receipt_no:integer receipt_sub_no:integer customer_id:string product_cd:string quantity:integer amount:integer --no-timestamps --force
 
 rails g model Store store_cd:string store_name:string prefecture_cd:string prefecture:string address:string address_kana:string tel_no:string "longitude:decimal{11,8}" "latitude:decimal{11,8}" floor_area:string --no-timestamps --force
 

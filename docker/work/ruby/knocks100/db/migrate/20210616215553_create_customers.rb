@@ -10,7 +10,7 @@ class CreateCustomers < ActiveRecord::Migration[6.1]
       t.string :postal_cd
       t.string :address
       t.string :application_store_cd
-      t.date :application_date
+      t.string :application_date
       t.string :status_cd
     end
   end

@@ -4,7 +4,7 @@
 #
 #  address              :string
 #  age                  :integer
-#  application_date     :date
+#  application_date     :string
 #  application_store_cd :string
 #  birth_day            :date
 #  customer_name        :string
